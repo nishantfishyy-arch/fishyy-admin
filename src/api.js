@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // ⚠️ Ensure this matches your running Backend URL
-const API_URL = 'http://localhost:5000'; 
+const API_URL = 'https://fishyy-backend.onrender.com'; 
 
 export const fetchOrders = async () => {
     try {
@@ -40,4 +40,5 @@ export const assignDriver = async (orderId, driverId, driverName) => {
     } catch (error) {
         return false;
     }
+
 };
