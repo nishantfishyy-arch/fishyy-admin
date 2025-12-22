@@ -6,7 +6,8 @@ import './App.css';
 
 // Simple function to fetch withdrawals directly
 const fetchWithdrawals = async () => {
-  const res = await fetch('https://fishyy-backend.onrender.com');
+  // Added '/admin/withdrawals' to the end
+  const res = await fetch('https://fishyy-backend.onrender.com/admin/withdrawals'); 
   return res.json();
 };
 
